@@ -1,0 +1,146 @@
+.checkout {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.part-one,
+.part-two,
+.part-three {
+  width: 33%;
+  color: rgb(1, 31, 95);
+}
+.data-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+.title {
+  margin-top: 6.5rem;
+  font-size: 2rem;
+  margin-left: 7rem;
+  font-stretch: extra-expanded;
+}
+.payment {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.split {
+  margin-top: 1rem;
+  height: 76%;
+  border-right: thick double rgb(1, 31, 95);
+}
+.data-container input {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  background-color: rgb(235, 235, 244);
+  outline: none;
+  border: 1px solid rgb(1, 31, 95);
+  border-radius: 5px;
+  height: 2.2rem;
+  color: grey;
+  font-size: 1rem;
+  padding-left: 8px;
+}
+.data-container label {
+  font-size: 1.2rem;
+}
+.delivery-data,
+.card-data,
+.city-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+}
+.card-data input {
+  width: 95%;
+}
+
+input::placeholder {
+  padding-left: 8px;
+  color: gray;
+  font-size: 1rem;
+}
+.purchase-summary {
+  width: 90%;
+  height: 60%;
+  background-color: rgb(235, 235, 244);
+  border: 1px solid rgb(1, 31, 95);
+  border-radius: 5px;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+.purchase-summary img,
+.purchase-summary .cart-item-remove {
+  display: none;
+}
+.purchase-summary span {
+  color: darkgrey;
+  text-align: center;
+}
+.purchase-summary .cart-items {
+  border: none;
+  height: 3rem;
+  position: relative;
+}
+.purchase-summary .cart-items .cart-item-title {
+  transform: translateX(-3rem);
+}
+.purchase-summary .cart-items .quantity button {
+  display: none;
+}
+.purchase-summary .cart-items .quantity {
+  box-shadow: none;
+  left: 0.5rem;
+
+  position: absolute;
+}
+.purchase-summary .cart-items .cart-item-price {
+  position: absolute;
+  right: -1rem;
+}
+.purchase-summary p,
+.payment-description p {
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+  margin-top: 2rem;
+  text-decoration-line: underline;
+}
+.item-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+.price-payment,
+.delivery-fee,
+.total-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#btn-finish {
+  color: #011f5f;
+  padding: 5px 10px;
+  width: 50%;
+  margin-left: 30%;
+  font-size: 1.2rem;
+  background: none;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #011f5f;
+  box-shadow: 3px 5px 5px rgb(161, 163, 164);
+}
+#btn-finish:hover {
+  box-shadow: inset 3px 5px 5px rgb(161, 163, 164);
+}
